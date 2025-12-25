@@ -8,7 +8,7 @@ A modern, pixel-perfect clone of the Setapp landing page built with **Next.js 15
 
 ## 🚀 Live Demo
 
-[View Live Demo on Vercel](https://your-deployment-url.vercel.app)
+[View Live Demo on Vercel](https://azora-assessment-task.vercel.app/)
 
 ## 📋 Table of Contents
 
