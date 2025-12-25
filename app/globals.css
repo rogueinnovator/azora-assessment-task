@@ -1,26 +1,54 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #26262B;
+  --foreground: hsl(0, 0%, 100%);
+  --logo-color: #E6C3A5;
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-logo: var(--logo-color);
+  --color-sticker-peach: #F6C098;
+  --color-sticker-blue: #9CD5F1;
+  --color-sticker-pink: #E598B8;
+  --color-sticker-orange: #FAB282;
+  --color-sticker-mint: #E1EFEA;
+  --color-sticker-purple: #C894E2;
+}
+/* UTILITIES FOR STICKERS ANIMATIONS */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(var(--tw-rotate)); }
+  50% { transform: translateY(-10px) rotate(var(--tw-rotate)); }
+  100% { transform: translateY(0px) rotate(var(--tw-rotate)); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.main-text {
+  font-family: 'Avenir Next', sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-align: center;
+  vertical-align: middle;
+  color: #FFFFFF;
+
+  @media (min-width: 768px) {
+    font-size: 74px;
+    line-height: 67.84px;
+  }
+}
+
+
