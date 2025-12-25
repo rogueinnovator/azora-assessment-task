@@ -167,7 +167,7 @@ git push origin main
    - Vercel will auto-detect Next.js and configure settings
    - Click "Deploy"
 
-3. **Done!** Your app will be live at `https://your-project.vercel.app`
+3. **Done!** Your app will be live at `https://azora-assessment-task.vercel.app/`
 
 ### Environment Variables
 
